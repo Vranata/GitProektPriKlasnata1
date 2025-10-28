@@ -15,6 +15,9 @@ namespace GitExercise
             "pow - Power",
             "log - Logarithm",
             "fact - sum of 2 factorials"
+            "ds - Divide Remainder",
+            "ex Exit"
+
         };
 
         public static void Add(double a, double b)
@@ -69,6 +72,13 @@ namespace GitExercise
                 result = result * i;
             }
             return result;
+        public static void DivideRemainder(double a, double b)
+        {
+            Console.WriteLine($"{a} % {b} = {a % b});
         }
     }
 }
+
+
+
+

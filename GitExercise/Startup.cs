@@ -14,6 +14,7 @@ namespace GitExercise
         "abcd1234";
         public static void Main()
         {
+<<<<<<< HEAD
 
             bool isAuthorized = CheckCredentials();
             if (!isAuthorized)
@@ -21,6 +22,8 @@ namespace GitExercise
                 Console.WriteLine("Access denied."); Console.ReadKey(intercept: true);
                 return;
             }
+=======
+>>>>>>> c1593a8c1fb42134fe0a277b11f5fff52c0d1f25
             Console.Clear();
             Console.WriteLine("Console Calculator App");
             Console.WriteLine(new string('-', 15));
@@ -51,6 +54,7 @@ namespace GitExercise
                 case "m":
                     OptionsManager.Multiply(a, b);
                     break;
+<<<<<<< HEAD
                 case "d":
                     OptionsManager.Divide(a, b);
                     break;
@@ -73,6 +77,15 @@ namespace GitExercise
                 case "fact":
                     OptionsManager.Factorial(a, b);
                     break;
+=======
+                case "dr":
+                    OptionsManager.DivideRemainder(a, b);
+                    break;
+                case "ex":
+                    Console.Clear();
+                    Console.WriteLine("Goodbye");
+                    return;
+>>>>>>> c1593a8c1fb42134fe0a277b11f5fff52c0d1f25
             }
 
                 Console.WriteLine("Pres any key to close the app...");
